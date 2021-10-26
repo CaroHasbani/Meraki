@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "nombre": "Plan 1",
+        "precio": "1000"
+    
+    },
+    {
+        "id": 2,
+        "nombre": "Plan 2",
+        "precio": 2000
+    },
+    {
+        "id": 3,
+        "nombre": "Plan 3",
+        "precio": 3000
+      
+    }
+]
