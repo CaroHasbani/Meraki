@@ -346,19 +346,17 @@ p {
     height: 500px;
     width: 100%;
 }
-.carousel-item .carousel-caption h5{
+.carousel-item h5{
     color: var(--boldMainColor);
     font-weight: 800;
-    line-height: 50px;
     font-size: 20px;
     
 }
-.carousel-item .carousel-caption p{
+.carousel-item  p{
     color: var(--boldMainColor);
     font-weight: 400;
-    line-height: 50px;
     font-size: 18px;
-    /* background-color: var(--lightNeutralColor); */
+
 }
   /*--------------section fotos---------------------------*/
 .instagram-photo {
@@ -447,7 +445,15 @@ p {
     background-size:cover;
     background-repeat: no-repeat;
 }
-  
+/*Carrito*/
+#totalCarrito{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+
   /*Footer*/
 .footer-section {
     background: var(--boldMainColor);
