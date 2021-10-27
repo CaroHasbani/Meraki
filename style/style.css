@@ -240,7 +240,7 @@ p {
   
 @media (min-width: 576px) {
     .container {
-      max-width: 640px;
+      max-width: 700px;
     }
 } 
 .circulo {
@@ -251,7 +251,7 @@ p {
 }
   
 .imagen-fondo-nosotros {
-    background-image: url(../images/pexels-karolina-grabowska-7681243\ \(1\).jpg);
+    background-image: url(../images/pexels-artem-beliaikin-1078958\ \(1\).jpg);
     background-repeat: no-repeat;
     /*medidas 266 x 794  */
 }
@@ -351,12 +351,14 @@ p {
     font-weight: 800;
     line-height: 50px;
     font-size: 20px;
+    
 }
 .carousel-item .carousel-caption p{
     color: var(--boldMainColor);
     font-weight: 400;
     line-height: 50px;
     font-size: 18px;
+    /* background-color: var(--lightNeutralColor); */
 }
   /*--------------section fotos---------------------------*/
 .instagram-photo {
