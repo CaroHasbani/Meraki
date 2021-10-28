@@ -23,7 +23,6 @@ class Ecommerce {
         let acumular = ``;
         this.planes.forEach(plan => {
             acumular += `
-            <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="planes__item hotPlanes__item">
                     <div class="planes__item__pic">
@@ -36,7 +35,6 @@ class Ecommerce {
                         <div class="btn"><button data-idplan="${plan.id}" class="btn-agregar-carrito">¡Lo quiero!</button></div>
                     </div>
                 </div>
-            </div>
             </div>
             `
         });
