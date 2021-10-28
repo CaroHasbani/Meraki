@@ -28,6 +28,7 @@ function mostrarCardsCarrito(){
            document.getElementById("cantidad").innerHTML ="No hay seleccionado ningun plan "
            document.getElementById("total").innerHTML =  ""
            $('#clear').html('')
+           
    } ;
    document.getElementById("itemCarrito").innerHTML = acumular;
    this.cargarBotonesQuitar()
