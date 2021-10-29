@@ -2,18 +2,27 @@
     {
         "id": 1,
         "nombre": "Plan 1",
-        "precio": "1000"
+        "precio": 1000,
+        "src": "images/Choosing clothes-amico.svg",
+         "alt": "gente probando ropa",
+         "desc":"Ropa para una semana sin cambiarte"
     
     },
     {
         "id": 2,
         "nombre": "Plan 2",
-        "precio": 2000
+        "precio": 2000,
+        "src": "images/Choosing clothes-rafiki.svg",
+        "alt": "gente probando ropa",
+        "desc":"Ropa para dos semanas sin cambiarte"
     },
     {
         "id": 3,
         "nombre": "Plan 3",
-        "precio": 3000
+        "precio": 3000,
+        "src": "images/Choosing clothes-pana.svg",
+        "alt": "gente probando ropa",
+        "desc":"Ropa para un mes sin cambiarte"
       
     }
 ]

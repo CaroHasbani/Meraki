@@ -26,11 +26,11 @@ class Ecommerce {
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="planes__item hotPlanes__item">
                     <div class="planes__item__pic">
-                        <img src="images/Choosing clothes-amico.svg" alt="dibujo de ropa" >
+                        <img src='${plan.src}'  alt='${plan.alt}'>
                     </div>
                     <div class="planes__item__text">
                     <h4>${plan.nombre}</h4>
-                        <p> Incluye</p>
+                        <p> ${plan.desc}</p>
                         <div class="price">${plan.precio}</div>
                         <div class="btn"><button data-idplan="${plan.id}" class="btn-agregar-carrito">¡Lo quiero!</button></div>
                     </div>

@@ -1,15 +1,18 @@
-/**/
+/*Reseteo las medidas por default*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
 :root {
     --boldMainColor: #CC6C5C;
-    /*cosas que llamen la atención,cosas importantes, llamada a la acción*/
     --lightNeutralColor:#F2F2F2 ;
-    /*fondo, elementos de soporte*/
     --darkNeutralColor: #5A6C73;
-    /*parrafos y fondos oscuros*/
     --accentColor:#B1BDB9;
-    /**/
     --complimentaryColor: #E7E3E4;
-    /*contrasta y complenta al color principal*/
 }
 /*Body*/
 body {
@@ -126,7 +129,7 @@ p {
     transition: color .15s ease-in-out, background-color .15s ease-in-out;
 }
 
-/*header*/
+/*-----------------------header---------------------------------------------------------*/
 .principalTitle a {
     text-align: center;
     color: var(--boldMainColor);
@@ -151,7 +154,221 @@ p {
     width: 30px;
 }
   
-  /*Pagina de planes*/
+  /*---------Section nosotros------*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+  
+@media (min-width: 576px) {
+    .container {
+      max-width: 700px;
+    }
+} 
+.circulo {
+    background: var(--accentColor);
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+  
+.imagen-fondo-nosotros {
+    background-image: url(../images/pexels-artem-beliaikin-1078958\ \(1\).jpg);
+    background-repeat: no-repeat;
+    /*medidas 266 x 794  */
+}
+  
+ 
+  /*---------------------------Section como funciona------------------------------*/
+#comoFunciona {
+    margin-top: 20px;
+   margin-bottom: 90px;
+}
+  
+.carousel-item {
+    text-align: center;
+}
+.carousel-img{
+    height: 500px;
+    width: 100%;
+}
+.carousel-item h5{
+    color: var(--boldMainColor);
+    font-weight: 800;
+    font-size: 20px;
+    
+}
+.carousel-item  p{
+    color: var(--boldMainColor);
+    font-weight: 400;
+    font-size: 18px;
+}
+ 
+  /*--------------------------------section fotos------------------------------*/
+.instagram-photo {
+    overflow: hidden;
+}
+.instagram-photo .insta-item {
+    height: 320px;
+    text-align: center;
+}
+.instagram-photo .insta-item:hover:before {
+    opacity: 1;
+}
+.instagram-photo .insta-item:hover .inside-text {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+.instagram-photo .insta-item:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.instagram-photo .insta-item .inside-text {
+    padding-top: 130px;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.instagram-photo .insta-item .inside-text i {
+    font-size: 30px;
+    color: var(--accentColor);
+}
+.instagram-photo .insta-item .inside-text h5 {
+    margin-top: 14px;
+}
+.instagram-photo .insta-item .inside-text h5 a {
+    color: var(--accentColor);
+}
+  
+.instagram-img {
+    height: 20px;
+    width: 20px;
+    color: var(--lightNeutralColor);
+}
+  
+.set-bg-1 {
+    background-image: url(../images/pexels-djordje-cvetkovic-6389849.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+}
+  
+.set-bg-2 {
+    background-image: url(../images/pexels-alena-shekhovtcova-6995871.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+  
+.set-bg-3 {
+    background-image: url( ../images/pexels-breston-kenya-4297163.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+  
+.set-bg-4 {
+    background-image: url(../images/pexels-bankole-adeoni-7206287.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+  
+.set-bg-5 {
+    background-image: url(../images/pexels-aidan-roof-3372595.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+/*------------------------------Section impacto--------------------------*/
+.text-center {
+    text-align: center !important;
+}
+#impacto h2{
+    text-align: center ;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.impacto-area {
+    background: var(--lightNeutralColor);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.impacto-area .explanation {
+    border: 9px solid transparent;
+    padding: 30px 22px;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    position: relative;
+    z-index: 1;
+    background: var(--lightNeutralColor);
+}
+.impacto-area .explanation .caption p {
+    margin-bottom: 36px;
+    color: var(--darkNeutralColor);
+    font-size: 16px;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -ms-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}
+.impacto-area .explanation::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: var(--darkNeutralColor);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.impacto-area .explanation:hover {
+    border: 1px solid transparent;
+}
+.impacto-area .explanation:hover .caption h5 {
+    color: var(--lightNeutralColor);
+    font-weight: 800;
+}
+.impacto-area .explanation:hover .caption p {
+    color: var(--lightNeutralColor);
+}
+.impacto-area .explanation:hover::before {
+    height: 100%;
+}
+  
+.col-lg, .col-md, .col-sm {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+} 
+.img-impacto {
+    height: 90px;
+    width: 90px;
+}
+/*---------------------------Pagina de planes----------------------------*/
 #planes{
     margin-bottom: 100px;
     margin-top: 50px;
@@ -235,223 +452,7 @@ p {
     right: 35px;
     bottom: 20px;
 }
-
-  /*---------Section nosotros------*/
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    margin-top: 10px;
-}
-  
-@media (min-width: 576px) {
-    .container {
-      max-width: 700px;
-    }
-} 
-.circulo {
-    background: var(--accentColor);
-    border-radius: 50px;
-    height: 100px;
-    width: 100px;
-}
-  
-.imagen-fondo-nosotros {
-    background-image: url(../images/pexels-artem-beliaikin-1078958\ \(1\).jpg);
-    background-repeat: no-repeat;
-    /*medidas 266 x 794  */
-}
-  
-  /*---------Section impacto------*/
-.text-center {
-    text-align: center !important;
-}
-#impacto h2{
-    text-align: center ;
-    margin-top: 100px;
-    margin-bottom: 20px;
-}
-.impacto-area {
-    background: var(--lightNeutralColor);
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.impacto-area .explanation {
-    border: 9px solid transparent;
-    padding: 30px 22px;
-    -webkit-transition: all 0.4s ease-out 0s;
-    -moz-transition: all 0.4s ease-out 0s;
-    -ms-transition: all 0.4s ease-out 0s;
-    -o-transition: all 0.4s ease-out 0s;
-    transition: all 0.4s ease-out 0s;
-    position: relative;
-    z-index: 1;
-    background: var(--lightNeutralColor);
-}
-.impacto-area .explanation .caption p {
-    margin-bottom: 36px;
-    color: var(--darkNeutralColor);
-    font-size: 16px;
-    -webkit-transition: all 0.2s ease-out 0s;
-    -moz-transition: all 0.2s ease-out 0s;
-    -ms-transition: all 0.2s ease-out 0s;
-    -o-transition: all 0.2s ease-out 0s;
-    transition: all 0.2s ease-out 0s;
-}
-.impacto-area .explanation::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    background: var(--darkNeutralColor);
-    -webkit-transition: all 0.4s ease-out 0s;
-    -moz-transition: all 0.4s ease-out 0s;
-    -ms-transition: all 0.4s ease-out 0s;
-    -o-transition: all 0.4s ease-out 0s;
-    transition: all 0.4s ease-out 0s;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    /* border: 9px solid var(--complimentaryColor);  */
-}
-.impacto-area .explanation:hover {
-    border: 1px solid transparent;
-}
-.impacto-area .explanation:hover .caption h5 {
-    color: var(--lightNeutralColor);
-    font-weight: 800;
-}
-.impacto-area .explanation:hover .caption p {
-    color: var(--lightNeutralColor);
-}
-.impacto-area .explanation:hover::before {
-    height: 100%;
-}
-  
-.col-lg, .col-md, .col-sm {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-} 
-.img-impacto {
-    height: 90px;
-    width: 90px;
-}
-  /*---------Section como funciona------*/
-#comoFunciona {
-    margin-top: 20px;
-   margin-bottom: 90px;
-}
-  
-.carousel-item {
-    text-align: center;
-}
-.carousel-img{
-    height: 500px;
-    width: 100%;
-}
-.carousel-item h5{
-    color: var(--boldMainColor);
-    font-weight: 800;
-    font-size: 20px;
-    
-}
-.carousel-item  p{
-    color: var(--boldMainColor);
-    font-weight: 400;
-    font-size: 18px;
-
-}
-  /*--------------section fotos---------------------------*/
-.instagram-photo {
-    overflow: hidden;
-}
-.instagram-photo .insta-item {
-    height: 320px;
-    text-align: center;
-}
-.instagram-photo .insta-item:hover:before {
-    opacity: 1;
-}
-.instagram-photo .insta-item:hover .inside-text {
-    opacity: 1;
-    visibility: visible;
-    z-index: 99;
-}
-.instagram-photo .insta-item:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    content: "";
-    opacity: 0;
-    -webkit-transition: all 0.3s;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.instagram-photo .insta-item .inside-text {
-    padding-top: 130px;
-    opacity: 0;
-    visibility: hidden;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.instagram-photo .insta-item .inside-text i {
-    font-size: 30px;
-    color: var(--accentColor);
-}
-.instagram-photo .insta-item .inside-text h5 {
-    margin-top: 14px;
-}
-.instagram-photo .insta-item .inside-text h5 a {
-    color: var(--accentColor);
-}
-  
-.instagram-img {
-    height: 20px;
-    width: 20px;
-    color: var(--lightNeutralColor);
-}
-  
-.set-bg-1 {
-    background-image: url(../images/pexels-djordje-cvetkovic-6389849.jpg);
-     background-size:cover;
-     background-repeat: no-repeat;
-}
-  
-.set-bg-2 {
-    background-image: url(../images/pexels-alena-shekhovtcova-6995871.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-      /*medidas 250 x 320  */
-}
-  
-.set-bg-3 {
-    background-image: url( ../images/pexels-breston-kenya-4297163.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-  
-.set-bg-4 {
-    background-image: url(../images/pexels-bankole-adeoni-7206287.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-  
-.set-bg-5 {
-    background-image: url(../images/pexels-aidan-roof-3372595.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-/*Carrito*/
+/*--------------------------Carrito------------------------------*/
 #img-buy{
     height: 50px;
     width: 100%;
@@ -473,10 +474,8 @@ p {
     margin-bottom: 15px;
     font-weight: normal;
 }
-
-
  #itemCarrito{
-     margin-top: 100px;
+         margin-top: 100px;
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
         display: flex;
@@ -484,7 +483,7 @@ p {
         flex-wrap: wrap;
         justify-content: center;
 } 
-  /*Footer*/
+  /*-----------------------Footer--------------------------------------*/
 .footer-section {
     background: var(--boldMainColor);
     padding-top: 75px;
@@ -493,6 +492,7 @@ p {
   
 .footer-left {
     margin-bottom: 30px;
+    text-align: center; 
 }
 .footer-left ul {
     list-style: none;
@@ -542,22 +542,24 @@ p {
   
 .footer-widget {
     margin-bottom: 30px;
+    text-align: center; 
 }
 .footer-widget h5 {
     color: var(--accentColor);
     font-weight: 700;
-    margin-bottom: 26px;
+     text-align: center;  
+    padding-left: 2rem;
 }
 .footer-widget ul li {
     list-style: none;
+    padding-left: 0px;
 }
 .footer-widget ul li a {
     line-height: 36px;
     font-size: 16px;
     color: var(--accentColor);
 }
-  
-  .social-media {
+.social-media {
     height: 20px;
     width: 20px;
 }
