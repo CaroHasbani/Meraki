@@ -9,6 +9,8 @@
     <!-- <script src="js/planes.js" defer></script> -->
     <script src="js/ecommerce.js" defer></script>
     <script src="js/carrito.js" defer></script>
+    <!-- Sweet Alert Script -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--Meta heads-->
    <meta name="description" content="Tienda de alquiler de ropa">
    <meta name="keywords" content="alquiler de ropa, moda,cuidado del medio ambiente, moda sustentable">
@@ -22,22 +24,18 @@
      <!--Header-->
      <header>
         <h1 class="principalTitle"><a href="index.html">Meraki</a></h1> 
-         <ul class="list-inline">
-             <li class="list-inline-item">Creatividad</li>
-             <li class="list-inline-item"> Cuiado del medioambiente</li>
-             <li class="list-inline-item">Estilo</li>
-           </ul>
+        <span class="slogan">Elegí tu aspecto, conserva tu escencia</span>
            <div>
             <nav aria-label="menu, zona de navegación">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                      <a class="nav-link"  href="index.html">Nosotros</a>
+                      <a class="nav-link"  href="index.html#Nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html">¿Como funciona?</a>
+                      <a class="nav-link" href="index.html#comoFunciona">¿Como funciona?</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html">Impacto</a>
+                      <a class="nav-link" href="index.html#impacto">Impacto</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link "  href="planes.html">Planes</a>
@@ -54,6 +52,7 @@
 <section id="totalCarrito">
         <div id="cantidad">  </div>
         <div id="total"> </div>
+        <div id="comprar"></div>
          <div id="clear"> </div> 
         <div id="itemCarrito"></div>
 </section>

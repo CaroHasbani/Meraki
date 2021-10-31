@@ -18,7 +18,9 @@ function mostrarCardsCarrito(){
            </div>`
       });
       $('#clear').html('<button id="btnJQuery">Vaciar carrito</button>')
-      $("#btnJQuery").click(vaciarCarrito)
+      $("#btnJQuery").click(alertaVaciar)
+      $('#comprar').html('<button id="btnJQuery2">Comprar</button>')
+      $("#btnJQuery2").click(realizarCompra)
       //Escribo en el html el total y la cantidad de elementos 
       document.getElementById("cantidad").innerHTML ="Cantidad de planes seleccionados: "+  Alquilario.cantidad;
       document.getElementById("total").innerHTML =  "$"+ Alquilario.total
@@ -28,7 +30,7 @@ function mostrarCardsCarrito(){
            document.getElementById("cantidad").innerHTML ="No hay seleccionado ningun plan "
            document.getElementById("total").innerHTML =  ""
            $('#clear').html('')
-           
+           $('#comprar').html('')
    } ;
    document.getElementById("itemCarrito").innerHTML = acumular;
    this.cargarBotonesQuitar()
@@ -62,8 +64,27 @@ function cargarBotonesQuitar() {
        }
    })
 }
-//vacio TODO el carrito y el storage
+ function alertaVaciar(){
+    swal({
+        title: "Estas seguro?",
+        text: "Mira que una vez que le des vaciar tenes que elegir todo de nuevo",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          swal("Vaciaste el carrito", {
+            icon: "success",
+          });
+          vaciarCarrito();
+        } else {
+          swal("Aca no pasó nada, podes seguir pensandolo");
+        }
+      });
+ }
  function vaciarCarrito(){
+ //vacio TODO el carrito y el storage
    localStorage.total =0;
    localStorage.cantidad=0;
    localStorage.producto=[];
@@ -71,4 +92,21 @@ function cargarBotonesQuitar() {
    Alquilario.cantidad=0;
    Alquilario.carrito=0;
    mostrarCardsCarrito();
+  
  }
+ function realizarCompra(){
+    swal({
+        title: "Compra realizada con exito",
+        text: "Dentro de 15 días vas a estar recibiendo tu primer box",
+        icon: "success",
+      });
+    localStorage.total =0;
+    localStorage.cantidad=0;
+    localStorage.producto=[];
+    Alquilario.total=0;
+    Alquilario.cantidad=0;
+    Alquilario.carrito=0;
+    mostrarCardsCarrito();
+  }
+
+

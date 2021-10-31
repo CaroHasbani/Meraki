@@ -56,7 +56,6 @@ class Ecommerce {
         })
 
     }
-
     agregarAlCarrito(id) {
         let existente=this.carrito.findIndex(element =>element.id==id)
         if(existente==-1){
@@ -64,9 +63,10 @@ class Ecommerce {
                 return plan.id == id;
             }); // 1
             this.carrito.push(productoAAgregar); 
+            swal("Genial", "Agregaste el plan al carrito", "success");
         }
         else{
-            alert("No se puede seleccionar el mismo plan mas de una vez")
+            swal("Error", "No se puede seleccionar más de una vez el mismo plan", "error");
 
         }
         // Total del carrito

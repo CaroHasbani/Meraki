@@ -89,7 +89,7 @@ p {
     margin-bottom: 15px;
     font-weight: normal;
 }
-/*Botones*/
+/*-------------------------------Botones-------------------------------------*/
 .btn-agregar-carrito{
     padding: .375rem .75rem;
     border: 1px solid var(--darkNeutralColor);
@@ -104,7 +104,15 @@ p {
     color: var(--darkNeutralColor);
     transition: color .15s ease-in-out, background-color .15s ease-in-out;
 } 
-#btnJQuery:hover{
+ #btnJQuery2{
+    padding: .375rem .75rem;
+    border: 1px solid var(--darkNeutralColor);
+    border-radius: .25rem;
+    color: var(--darkNeutralColor);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+    margin-bottom: 10px;
+} 
+#btnJQuery:hover, #btnJQuery2:hover{
     padding: .375rem .75rem;
     border: 1px solid var(--boldMainColor);
     border-radius: .25rem;
@@ -130,10 +138,23 @@ p {
 }
 
 /*-----------------------header---------------------------------------------------------*/
+header{
+    text-align: center;
+}
 .principalTitle a {
     text-align: center;
     color: var(--boldMainColor);
     text-decoration: none;
+}
+.slogan{
+    font-family: 'Pacifico';
+    color: var(--darkNeutralColor);
+    margin-top: 0px;
+    font-weight: 800;
+    text-transform: normal;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
 }
   
 .list-inline {
@@ -172,10 +193,12 @@ p {
     border-radius: 50px;
     height: 100px;
     width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
   
 .imagen-fondo-nosotros {
-    background-image: url(../images/pexels-artem-beliaikin-1078958\ \(1\).jpg);
+    background-image: url(../images/artem.jpg);
     background-repeat: no-repeat;
     /*medidas 266 x 794  */
 }
@@ -264,31 +287,31 @@ p {
 }
   
 .set-bg-1 {
-    background-image: url(../images/pexels-djordje-cvetkovic-6389849.jpg);
+    background-image: url(../images/djordje.jpg);
      background-size:cover;
      background-repeat: no-repeat;
 }
   
 .set-bg-2 {
-    background-image: url(../images/pexels-alena-shekhovtcova-6995871.jpg);
+    background-image: url(../images/carrie.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
   
 .set-bg-3 {
-    background-image: url( ../images/pexels-breston-kenya-4297163.jpg);
+    background-image: url( ../images/breston.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
   
 .set-bg-4 {
-    background-image: url(../images/pexels-bankole-adeoni-7206287.jpg);
+    background-image: url(../images/bankole.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
   
 .set-bg-5 {
-    background-image: url(../images/pexels-aidan-roof-3372595.jpg);
+    background-image: url(../images/marlene.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
